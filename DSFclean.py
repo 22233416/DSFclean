@@ -12,7 +12,7 @@ import csv
 
 with open(inputfile, newline='\n') as f: #Opens the input file
     reader = csv.reader(f, delimiter = "\t") 
-    outputfile = open("Desktop/Clean Output.txt", "a") #creates the output file
+    outputfile = open("Desktop/Clean_Output.txt", "a") #creates the output file
     counter = 0
     for d in list(reader): #'d' represents a row
         if len(d) != 0: #To stop the program crashing at the end of the document lol
